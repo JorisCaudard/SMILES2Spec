@@ -30,7 +30,7 @@ These models were developed in order to predict IR vibrational spectra of variou
 ## Authors
 
 
-ex. CAUDARD Joris
+* [CAUDARD Joris](https://github.com/JorisCaudard)
 
 
 ## Acknowledgments
