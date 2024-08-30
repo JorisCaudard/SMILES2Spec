@@ -1,0 +1,2 @@
+import smiles2spec.models
+import smiles2spec.train
