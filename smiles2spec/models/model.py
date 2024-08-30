@@ -18,13 +18,12 @@ class Smile2Spec(nn.Module):
         - 'model_name' (str) : Name of the LLM model in HuggingFace. By default, "DeepChem/ChemBERTa-5M-MTR".
         - 'output_activation' (str) : 'exp' or 'ReLU'. Final activation dunction. By default, 'exp'.
         - 'norm_range'(None or tuple) : Region of the spectrum normalized by the model. By default, None.
-        - 'dropout' (float) : Dropour rate used by the model. By default, 0.2.
+        - 'dropout' (float) : Dropout rate used by the model. By default, 0.2.
         - 'activation' (nn.Module) : Activation function used by the FFN module of the model. By default, nn.ReLU().
         - 'ffn_num_layers' (int) : Number of layers in the FFN module. By default, 3.
         - 'ffn_input_dim' (int) : Dimension of the LLM encoding. By default for ChemBERTa models, 199.
         - 'ffn_hidden_size' (int) : Number of neurons in the layers of the FFN module. By default, 2200.
-        - 'ffn_output_dim' (int) : Dimension of the preditced spectrum. By default, 1801.
-        - 'ffn_num_layers' (int) : Number of layers in the FFN module. By default, 3.
+        - 'ffn_output_dim' (int) : Dimension of the predicted spectrum. By default, 1801.
     """
     def __init__(self, args):
         """
@@ -42,8 +41,7 @@ class Smile2Spec(nn.Module):
                     'ffn_num_layers':3,
                     'ffn_input_dim':199,
                     'ffn_hidden_size':2200,
-                    'ffn_output_dim':1801,
-                    'ffn_num_layers':3
+                    'ffn_output_dim':1801
                         }
         
         if args is None:
